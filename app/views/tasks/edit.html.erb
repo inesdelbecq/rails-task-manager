@@ -1,0 +1,13 @@
+<h1>Edit <%= @task.title %></h1>
+
+<%= form_for @task, html:{class: "form-inline"} do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+
+  <%= f.check_box :completed %>
+
+  <%= f.submit%>
+<% end %>
